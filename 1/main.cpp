@@ -275,8 +275,7 @@ int main()
     cout << "Ingrese sus peajes por día: ";
     cin >> peajeDiario;
 
-    costManejDia = ((kilcond / kilgalon) * cosPorK) +
-                       tarifaEstac + peajeDiario;
+    costManejDia = ((kilcond / kilgalon) * cosPorK) + tarifaEstac + peajeDiario;
 
     cout << "\nCoste de conducción diario: " << costManejDia << endl;
 }
