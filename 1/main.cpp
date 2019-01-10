@@ -260,23 +260,23 @@ int main()
 /////////////31
     double kilcond = 0, cosPorK = 0, kilgalon = 0,tarifaEstac = 0, peajeDiario = 0, costManejDia = 0;
 
-    cout << "Ingrese su total de kilometros recorridas por día ";
+    cout << "Ingrese su total de kilometros recorridas por dÃ­a ";
     cin >> kilcond;
 
-    cout << "Ingrese su costo por galón de gasolina: ";
+    cout << "Ingrese su costo por galÃ³n de gasolina: ";
     cin >> cosPorK;
 
-    cout << "ngrese su promedio de kil por galón: ";
+    cout << "ngrese su promedio de millas por galÃ³n: ";
     cin >> kilgalon;
 
-    cout << "Ingrese sus tarifas de estacionamiento por día: ";
+    cout << "Ingrese sus tarifas de estacionamiento por dÃ­a: ";
     cin >> tarifaEstac;
 
-    cout << "Ingrese sus peajes por día: ";
+    cout << "Ingrese sus peajes por dÃ­a: ";
     cin >> peajeDiario;
 
     costManejDia = ((kilcond / kilgalon) * cosPorK) +
                        tarifaEstac + peajeDiario;
 
-    cout << "\nCoste de conducción diario: " << costManejDia << endl;
+    cout << "\nCoste de conducciÃ³n diario: " << costManejDia << endl;
 }
