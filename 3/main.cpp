@@ -1,4 +1,8 @@
 #include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 
 using namespace std;
 bool multiplo(int x, int y)
@@ -18,11 +22,13 @@ void separacion(long n) {
     long numDig = 1;
     for (long i = n; i > 10; i /= 10) {
         numDig *= 10;
+
     }
 
     while (numDig > 0) {
-        cout << (n / numDig) % 10 << " ";
+        cout << (n / numDig) % 10 << " "<<endl;
         numDig /= 10;
+
     }
     cout << endl;
 }
@@ -41,9 +47,13 @@ void esPerfecto(int num)
         if(num%i==0)
         {
             k+=i;
+
+
+
         }
 
     }
+
     if(k==num)
     {
         cout<<endl;
@@ -53,7 +63,7 @@ void esPerfecto(int num)
             if(num%i==0)
             {
                 cout<<i<<";";
-                k+=i;
+
             }
         }
     }
@@ -61,21 +71,28 @@ void esPerfecto(int num)
 int reversa(int x)
 {
     int cont=0;
-    int num1;
+    int num1=x;
     int mod =1;
     int mod1 =1;
     int resultado;
-    num1=x;
+
     while(x>0){
+
         x=x/10;
         cont++;
 
+
     }
+
     cout<<"EL numero "<<num1<<", en su forma invertida es: ";
-    for(int i=1;i<=cont;i=i+1){
+    for(int i=1;i<=cont;i++){
+
         mod=mod*10;
+
         resultado=(num1%mod)/(mod1);
+
         mod1=mod1*10;
+
         cout<<resultado;
     }
 }
@@ -96,6 +113,34 @@ int puntos(int prome) {
         return 0;
     }
 }
+void numer(int num){
+
+    int num1=num;
+    int k;
+    cout<<"ingrese un numero: "<<endl;
+    cin>>k;
+    while(num!=k)
+    {
+
+        if((k>=num-20) && (k<=num+20)){
+
+            cout<<"estas bien cerca "<<endl;
+            cout<<"ingrese un numero: "<<endl;
+            cin>>k;
+
+        }
+        if((1000>=k-20)&&(0<=k+20)){
+            cout<<"estas bien lejos"<<endl;
+            cout<<"ingrese un numero: "<<endl;
+            cin>>k;
+        }
+
+
+
+    }
+    cout<<"ganaste"<<endl;
+}
+
 int pot(int base, int exponent) {
     if (exponent == 0) { return 1; }
 
@@ -146,14 +191,14 @@ int main()
 //    for (int c = 0; c <= 100; ++c) {
 //        cout << c ;
 //        cout<<": ";
-//        cout<< farenheit(static_cast<double>(c)) << endl;
+//        cout<< farenheit(c) << endl;
 //    }
-//    cout << "\nCelsius equivalent of Farenheit 32 to 212\n" << endl;
+//    cout << "celsius" << endl;
 //
 //    for (int f = 32; f <= 212; f++) {
 //        cout << f ;
 //        cout<<": ";
-//        cout<< celsius(static_cast<double>(f)) << endl;
+//        cout<< celsius(f) << endl;
 //    }
 /////////28
 //    for(int i=5;i<10000;i++)
@@ -168,24 +213,28 @@ int main()
 //    cin>>prom;
 //    cout<<"tu punto de calidad es :"<<puntos(prom)<<endl;
 //////34
-    //int num=1+rand()%(1000-1);
+//    srand (time(NULL));
+//
+//    int num=rand() % 1000 + 1;;
+//    cout<<num<<endl;
+//    numer(num);
 //736
 //    int base=2;
 //    int expo=5;
 //    cout<<pot(base,expo);
 
 ////38
-//        int n;
-//        char A,B,C;
-//
-//        cout<<"Los clavijas son A B C\n";
-//        cout<<"Numero de discos: ";
-//        cin>>n;
-//        hanoi(n,'A','C','B');
+        int n;
+        char A,B,C;
+
+        cout<<"Los clavijas son A B C\n";
+        cout<<"Numero de discos: ";
+        cin>>n;
+        hanoi(n,'A','C','B');
 //////40
-    for (int counter = 0; counter <= 10; ++counter) {
-        cout<<counter<<"..."<< factorial(counter)<<endl;
-    }
+//    for (int counter = 0; counter <= 10; ++counter) {
+//        cout<<counter<<"..."<< factorial(counter)<<endl;
+//    }
 
     return 0;
 }

@@ -1,4 +1,7 @@
 # depslib dependency file v1.0
-1547184128 source:d:\anel\3\main.cpp
+1547221156 source:d:\aannnnn\3\main.cpp
 	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
 
