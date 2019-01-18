@@ -39,7 +39,15 @@ int convChar(char a)
 {
     return a-'0';
 }
-
+void strcpy(char s[],char t[])
+{
+    int i=0;
+    for(i;t[i]!='\0';i++)
+    {
+        s[i]=t[i];
+    }
+    s[i]='\0';
+}
 //void cambcad(char *a[][4],char *b[][4],int ind)
 //{
 //    int i = 0 ;
@@ -49,27 +57,35 @@ int convChar(char a)
 //    }
 //    b[ind][ i ] = '\n' ;
 //}
-void swapp(char *a,char *b)
+
+void ordenar(char nom[][50],int tam)
 {
-    char t=*a;
-    *a=*b;
-    *b=t;
-}
-void ordenar(char nom[][4],int tam)
-{
-//    int cont=1;
+    char aux[tam];
     for(int j=0;j<tam;j++){
 //    {
         //cont=0;
-        for(int i=0;i<tam-1;i++){
+        for(int i=j+1;i<tam-1;i++){
 
-            if(convChar(nom[i][0])>convChar(nom[i+1][0])){
-                swapp(&(nom[i][0]),&(nom[i+1][0]));
-
+            if(convChar(nom[i][0])<convChar(nom[j][0])){
+                strcpy(aux,nom[i]);
+                strcpy(nom[i],nom[j]);
+                strcpy(nom[j],aux);
             }
         }
     }
 
+}
+bool potencia(int n)
+{
+    if(n%2==0)
+    {
+        return true;
+    }
+    else{
+        return false;
+
+    }
+    return potencia(n-1);
 }
 int main()
 {
@@ -94,12 +110,17 @@ int main()
 //    cout<<a[3]<<endl;
 //    cout<<a[4]<<endl;
 
-    char Nombres[4][4] = {{"j"},{"b"},{"u"},{"\0"}};
-    int k=4;
-    ordenar(Nombres,k);
-    for(int i = 0; i < 4;++i){
+    char Nombres[6][50] = {"cesar","bran","uni","aanel"};
+    int cont=1;
+    int orden[5];
+    while(cont<=4){
+        orden[cont]=cont;
+        cont++;
+    }
+    ordenar(Nombres,cont);
+    for(int i = 0; i < cont;i++){
 
-            cout<<Nombres[i][0];
+            cout<<Nombres[i];
 
         cout<<endl;
     }
