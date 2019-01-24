@@ -65,13 +65,10 @@ public:
 //        delete[] data;
 //        data = arr1;
         resize(size+1);
-        for(int i=0;i<pos;i++){
-            data[i]=data[i];
-        }
+        for(int i=size-1;i>pos;i--){
+            data[i]=data[i-1];
+
         data[pos]=val;
-        for(int i=pos;i<size;i++)
-        {
-            data[i+1]=data[i];
         }
     }
 
