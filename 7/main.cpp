@@ -16,14 +16,14 @@ public:
             data[i] = arr[i];
     }
 
-    void resize(int newSize)
+    void resize(int nuevo)
     {
-        int *pts =new int[newSize];
-        int minsize=(newSize > size )? size :newSize;
+        int *pts =new int[nuevo];
+        int minsize=(nuevo > size )? size :nuevo;
         for(int i=0 ;i<minsize ; i++)
             pts[i]=data[i];
         delete[]data;
-        size=newSize;
+        size=nuevo;
         data=pts;
     }
 
