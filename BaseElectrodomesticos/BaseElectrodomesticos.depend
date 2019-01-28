@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1548646505 source:d:\anel\baseelectrodomesticos\main.cpp
+	<iostream>
+	"Control.h"
+	<windows.h>
+	<cstdlib>
+
+1548649186 d:\anel\baseelectrodomesticos\include\control.h
+	"Tienda.h"
+
+1548649873 d:\anel\baseelectrodomesticos\include\tienda.h
+	"Maquina.h"
+	<iostream>
+	<string>
+	<string>
+	<string.h>
+	<sstream>
+	<fstream>
+	<cstdlib>
+	<conio.h>
+	<stdio.h>
+	<conio.h>
+
+1548640419 d:\anel\baseelectrodomesticos\include\maquina.h
+	"Electrodomesticos.h"
+
+1548639050 d:\anel\baseelectrodomesticos\include\electrodomesticos.h
+	<iostream>
+	<string>
+
+1548649880 source:d:\anel\baseelectrodomesticos\src\control.cpp
+	"Control.h"
+
+1548639050 source:d:\anel\baseelectrodomesticos\src\electrodomesticos.cpp
+	"Electrodomesticos.h"
+
+1548640419 source:d:\anel\baseelectrodomesticos\src\maquina.cpp
+	"Maquina.h"
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<conio.h>
+	<direct.h>
+	<string>
+
+1548651830 source:d:\anel\baseelectrodomesticos\src\tienda.cpp
+	"Tienda.h"
+

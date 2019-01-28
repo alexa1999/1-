@@ -1,0 +1,4 @@
+lavadora
+si
+78
+1002
