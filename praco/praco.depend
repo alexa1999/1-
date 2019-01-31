@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1548945002 source:d:\annnnn\praco\main.cpp
+	<iostream>
+	"Polygon.h"
+	"Rectangle.h"
+	"Triangle.h"
+
+1548943653 source:d:\annnnn\praco\src\polygon.cpp
+	"Polygon.h"
+
+1548944065 d:\annnnn\praco\include\polygon.h
+	<iostream>
+
+1548944106 source:d:\annnnn\praco\src\rectangle.cpp
+	"Rectangle.h"
+
+1548944011 d:\annnnn\praco\include\rectangle.h
+	"Polygon.h"
+
+1548944106 source:d:\annnnn\praco\src\triangle.cpp
+	"Triangle.h"
+
+1548944180 d:\annnnn\praco\include\triangle.h
+	"Polygon.h"
+
+1548947215 source:d:\annnnn\praco\src\arraydin.cpp
+
