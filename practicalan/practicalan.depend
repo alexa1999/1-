@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1548998734 source:d:\anel\practicalan\main.cpp
+	<iostream>
+	"Polygon.h"
+	"Triangle.h"
+	"ArrDyn.h"
+	"Rectangle.h"
+
+1548997646 source:d:\anel\practicalan\src\polygon.cpp
+	"Polygon.h"
+
+1548999032 d:\anel\practicalan\include\polygon.h
+	<iostream>
+
+1548997646 source:d:\anel\practicalan\src\rectangle.cpp
+	"Rectangle.h"
+
+1548997646 d:\anel\practicalan\include\rectangle.h
+	"Polygon.h"
+
+1548997646 source:d:\anel\practicalan\src\triangle.cpp
+	"Triangle.h"
+
+1548997646 d:\anel\practicalan\include\triangle.h
+	"Polygon.h"
+
+1548998665 source:d:\anel\practicalan\src\arrdyn.cpp
+	"ArrDyn.h"
+
+1548998917 d:\anel\practicalan\include\arrdyn.h
+	<iostream>
+	"Polygon.h"
+
