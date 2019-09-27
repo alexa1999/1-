@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1569559766 source:d:\anel\aed\ordenar\main.cpp
+	<iostream>
+	<thread>
+	<time.h>
+
